@@ -1,6 +1,6 @@
 # 365 Days Coding Challenge  
 
-### Goals  
+## Goals
 
-- Learn DSA fundamentals through daily practice.  
-- Build and deploy beginner-friendly full-stack projects.
+- Learn DSA through daily practice(takeuforward+)
+- Build and deploy full-stack projects(100xDevs)
