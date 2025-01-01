@@ -1,5 +1,7 @@
 # Learn DSA through daily practice
 
+#### Language: javascript
+
 - Beginner Problems
   - Patterns
   - Time Complexity
