@@ -22,16 +22,16 @@ function selectionSort(nums) {
 
 ### Time Complexity
 
-- Best Case: O(n2)O(n2)
-- Average Case: O(n2)O(n2)
-- Worst Case: O(n2)O(n2)
+- Best Case: O(n2)
+- Average Case: O(n2)
+- Worst Case: O(n2)
 
 ### Space Complexity
 
-- O(1)O(1) (In-place sorting)
+- O(1) (In-place sorting)
 
 ## Key Points
 
 - Selection Sort is not adaptive (it does not consider if the array is already sorted).
-- It is inefficient for large datasets due to its O(n2)O(n2) time complexity.
+- It is inefficient for large datasets due to its O(n2) time complexity.
 - It performs well on small arrays and is easy to implement.
