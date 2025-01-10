@@ -2,5 +2,5 @@
 
 ## Goals
 
-- Learn DSA through daily practice(takeuforward+)
+- Learn DSA through daily practice(takeuforward)
 - Build and deploy full-stack projects(100xDevs)
