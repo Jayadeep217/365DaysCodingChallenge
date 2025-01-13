@@ -2,7 +2,7 @@
 
 Given an array of integers nums, return the value of the largest element in the array
 
-<u>#### Examples:</u>
+#### <u>Examples:</u>
 
 Input: nums = [3, 3, 6, 1]  
 Output: 6  
@@ -15,7 +15,7 @@ Explanation: The largest element in array is 99
 Input: nums = [-4, -3, 0, 1, -8]  
 Output:1  
 
-<u>#### Constraints:</u>
+#### <u>Constraints:</u>
 
 1 <= nums.length <= 10<sup>5</sup>  
 -10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>  
