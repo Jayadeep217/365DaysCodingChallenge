@@ -17,8 +17,8 @@ Output:1
 
 <u>#### Constraints:</u>
 
-1 <= nums.length <= 10^5^
--10^4^ <= nums[i] <= 10^4^
+1 <= nums.length <= 10<sup>5</sup>
+-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>
 nums may contain duplicate elements.
 
 ## Solution

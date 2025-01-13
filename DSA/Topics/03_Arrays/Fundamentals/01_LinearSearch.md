@@ -17,9 +17,9 @@ Output: 0
 
 #### <ins>Constraints:</ins>
 
-1 <= nums.length <= 10^5^  
--10^4^ <= nums[i] <= 10^4^  
--10^4^ <= target <= 10^4^  
+1 <= nums.length <= 10<sup>5</sup>  
+-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>  
+-10<sup>4</sup> <= target <= 10<sup>4</sup>  
 
 ## Solution
 
