@@ -2,7 +2,7 @@
 
 Given an array of integers nums and an integer target, find the smallest index (0 based indexing) where the target appears in the array. If the target is not found in the array, return -1
 
-<u>#### Examples:</u>
+<ins>#### Examples:</ins>
 
 Input: nums = [2, 3, 4, 5, 3], target = 3  
 Output: 1  
@@ -15,7 +15,7 @@ Explanation: The value 6 does not occur in the array, hence output is -1
 Input: nums = [1, 3, 5, -4, 1], target = 1  
 Output: 0  
 
-<u>#### Constraints:</u>
+<ins>#### Constraints:</ins>
 
 1 <= nums.length <= 10^5^
 -10^4^ <= nums[i] <= 10^4^
