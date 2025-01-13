@@ -2,7 +2,7 @@
 
 Given an array of integers nums, return the second-largest element in the array. If the second-largest element does not exist, return -1.
 
-#### <u>Examples:</u>
+#### <ins>Examples:</ins>
 
 Input: nums = [8, 8, 7, 6, 5]  
 Output: 7  
@@ -15,7 +15,7 @@ Explanation: The only value in nums is 10, so there is no second largest value, 
 Input: nums = [7, 7, 2, 2, 10, 10, 10]  
 Output: 7
 
-#### <u>Constraints:</u>
+#### <ins>Constraints:</ins>
 
 1 <= nums.length <= 10<sup>5</sup>  
 -10<sup>4</sup> <= nums[i] <= 10<sup>4</sup>  
