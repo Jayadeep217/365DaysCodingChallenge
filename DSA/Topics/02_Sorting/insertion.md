@@ -17,8 +17,8 @@ function insertionSort(nums) {
 ## Time Complexity
 
 - Best Case O(n) When the array is already sorted, only one comparison per element is needed.
-- Worst Case O(n2) When the array is sorted in reverse order, every element must be compared with all elements in the sorted portion.
-- Average Case O(n2) For random data, the algorithm has to perform multiple shifts on average.
+- Worst Case O(n^2^) When the array is sorted in reverse order, every element must be compared with all elements in the sorted portion.
+- Average Case O(n^2^) For random data, the algorithm has to perform multiple shifts on average.
 
 ## Space Complexity
 

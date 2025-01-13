@@ -22,8 +22,8 @@ function bubbleSort(nums) {
 ### Time Complexity
 
 - Best Case: O(n) (when the array is already sorted; due to the swapped flag).
-- Average Case: O(n2)
-- Worst Case: O(n2)
+- Average Case: O(n^2^)
+- Worst Case: O(n^2^)
 
 ### Space Complexity
 
