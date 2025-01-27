@@ -38,3 +38,18 @@
 .nav-header-img {
     width: 24px;
 }
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 700px, 8px;
+    font-size: 14px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
