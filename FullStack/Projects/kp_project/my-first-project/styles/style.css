@@ -1,0 +1,29 @@
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-block: 50px;
+}
+
+h1 {
+    color: #4676A9;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+h2 {
+    color: #CB731C;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #22466c;
+}
