@@ -1,0 +1,1 @@
+/mnt/c/Users/gadda/OneDrive/code/365DaysCodingChallenge/learn-rust/projects/helloworld_cargo/target/debug/helloworld_cargo: /mnt/c/Users/gadda/OneDrive/code/365DaysCodingChallenge/learn-rust/projects/helloworld_cargo/src/main.rs
