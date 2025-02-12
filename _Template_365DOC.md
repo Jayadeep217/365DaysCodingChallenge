@@ -1,15 +1,14 @@
 🎯Day of #365DaysOfCode 
 ✅#DSA:
-✅#FullStack: 
+✅#WebDev: 
 #100DaysOfCode
 
 🎯Day of #365DaysOfCode 
 ✅#DSA:
-❌#FullStack❌
+❌#WebDev
 #100DaysOfCode
 
 🎯Day of #365DaysOfCode 
-❌#DSA❌
-✅#FullStack:
+❌#DSA
+✅#WebDev:
 #100DaysOfCode
-
