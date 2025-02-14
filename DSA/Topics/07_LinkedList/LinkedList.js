@@ -49,7 +49,8 @@ class LinkedList {
     return this.head;
   }
 
-  remove(index) {
+  //This function removes element when index is passed.
+  removeAt(index) {
     let currentNode = this.head,
       previousNode;
     // Handle empty list
@@ -57,7 +58,7 @@ class LinkedList {
       throw new Error("List is empty!");
     }
 
-    if (index < 0 || index > this.size) {
+    if (index < 0 || index >= this.size) {
       throw new Error("Provide a valid index.");
     }
 
@@ -72,13 +73,45 @@ class LinkedList {
       previousNode.next = currentNode.next;
     }
     this.size--;
-    return currentNode.element;
+    return currentNode.data;
   }
+
+  //This function removes element when an element is passed.
+  remove(element) {
+    let currentNode = this.head, previousNode;
+  
+    // Handle empty list
+    if (this.head === null) {
+      throw new Error("List is empty!");
+    }
+  
+    // Check if head needs to be removed
+    if (this.head.data === element) {
+      this.head = this.head.next;
+      this.size--;
+      return element;
+    }
+  
+    // Traverse to find the element
+    while (currentNode !== null) {
+      if (currentNode.data === element) {
+        previousNode.next = currentNode.next;
+        this.size--;
+        return element;
+      }
+      previousNode = currentNode;
+      currentNode = currentNode.next;
+    }
+  
+    // If element is not found
+    return -1;
+  }
+  
 
   indexOf(element) {
     let currentNode = this.head,
       index = 0;
-    while (currentNode!==null) {
+    while (currentNode !== null) {
       if (currentNode.data === element) return index;
       index++;
       currentNode = currentNode.next;
@@ -109,25 +142,34 @@ class LinkedList {
       previousNode = currentNode;
       currentNode = tempNode;
     }
-    this.head =  previousNode;
+    this.head = previousNode;
   }
 }
 
 let ll = new LinkedList();
 // ll.insert(5, -1);
 ll.insert("sdf", 0);
-ll.insert('c', 1);
+ll.insert("c", 1);
 ll.insert(2, 2);
 ll.insert(3, 3);
 ll.insert(4);
-ll.insert('5b');
+ll.insert("5b");
 ll.insert(6);
 ll.insert(7);
+console.log("original LL :");
 ll.print();
 console.log(ll.size);
-// console.log(ll.remove(Number(process.argv[2])));
-// ll.print();
-// console.log(ll.size);
+console.log("remove LL :");
+console.log(ll.removeAt(Number(process.argv[2])));
+console.log(ll.size);
+ll.print();
+console.log("insert LL :");
+ll.insert("ert", 0);
+console.log(ll.size);
+ll.print();
+console.log("reverse :");
 ll.reverse();
 ll.print();
 console.log(ll.indexOf("6"));
+console.log(ll.isEmpty());
+
