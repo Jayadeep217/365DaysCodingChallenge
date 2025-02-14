@@ -75,7 +75,16 @@ class LinkedList {
     return currentNode.element;
   }
 
-  indexOf(element) {}
+  indexOf(element) {
+    let currentNode = this.head,
+      index = 0;
+    while (currentNode!==null) {
+      if (currentNode.data === element) return index;
+      index++;
+      currentNode = currentNode.next;
+    }
+    return -1;
+  }
 
   isEmpty() {
     return this.size === 0;
@@ -91,20 +100,34 @@ class LinkedList {
     console.log("NULL");
   }
 
-  reverse() {}
+  reverse() {
+    let previousNode = null,
+      currentNode = this.head;
+    while (currentNode !== null) {
+      let tempNode = currentNode.next;
+      currentNode.next = previousNode;
+      previousNode = currentNode;
+      currentNode = tempNode;
+    }
+    this.head =  previousNode;
+  }
 }
 
 let ll = new LinkedList();
 // ll.insert(5, -1);
-ll.insert(0, 0);
-ll.insert(1, 1);
+ll.insert("sdf", 0);
+ll.insert('c', 1);
 ll.insert(2, 2);
 ll.insert(3, 3);
 ll.insert(4);
-ll.insert(5);
+ll.insert('5b');
 ll.insert(6);
+ll.insert(7);
 ll.print();
 console.log(ll.size);
-console.log(ll.remove(Number(process.argv[2])));
+// console.log(ll.remove(Number(process.argv[2])));
+// ll.print();
+// console.log(ll.size);
+ll.reverse();
 ll.print();
-console.log(ll.size);
+console.log(ll.indexOf("6"));
