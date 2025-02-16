@@ -30,12 +30,12 @@ class LinkedList {
         newNode.next = this.head;
         this.head = newNode;
       } else {
-        let tempNode = this.head;
+        let currentNode = this.head;
         for (let i = 1; i < index; i++) {
-          tempNode = tempNode.next;
+          currentNode = currentNode.next;
         }
-        newNode.next = tempNode.next;
-        tempNode.next = newNode;
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
       }
     } else {
       //append at last node
@@ -58,7 +58,7 @@ class LinkedList {
       throw new Error("List is empty!");
     }
 
-    if (index < 0 || index >= this.size) {
+    if (index < 0 || index >= this.size || isNaN(index)) {
       throw new Error("Provide a valid index.");
     }
 
@@ -124,11 +124,11 @@ class LinkedList {
   }
 
   print() {
-    let tempNode = this.head;
+    let currentNode = this.head;
     process.stdout.write("HEAD->");
-    while (tempNode !== null) {
-      process.stdout.write(tempNode.data + "->");
-      tempNode = tempNode.next;
+    while (currentNode !== null) {
+      process.stdout.write(currentNode.data + "->");
+      currentNode = currentNode.next;
     }
     console.log("NULL");
   }
@@ -157,18 +157,27 @@ ll.insert("5b");
 ll.insert(6);
 ll.insert(7);
 ll.insert("hgf",7);
-ll.insert(7);
+
 console.log("original LL :");
 ll.print();
 console.log(ll.size);
-console.log("remove LL :");
-console.log(ll.removeAt(Number(process.argv[2])));
+
+console.log("insert LL :");
+ll.insert(7,0);
 console.log(ll.size);
 ll.print();
+
+console.log("remove LL :");
+// console.log(ll.removeAt(Number(process.argv[2])));
+console.log(ll.remove(3));
+console.log(ll.size);
+ll.print();
+
 console.log("insert LL :");
 ll.insert("ert", 0);
 console.log(ll.size);
 ll.print();
+
 console.log("reverse :");
 ll.reverse();
 ll.print();
