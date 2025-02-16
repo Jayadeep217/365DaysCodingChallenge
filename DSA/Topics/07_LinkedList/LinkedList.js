@@ -156,6 +156,8 @@ ll.insert(4);
 ll.insert("5b");
 ll.insert(6);
 ll.insert(7);
+ll.insert("hgf",7);
+ll.insert(7);
 console.log("original LL :");
 ll.print();
 console.log(ll.size);
